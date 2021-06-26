@@ -1,0 +1,99 @@
+{
+  "name": "just-a-template",
+  "version": "0.0.1",
+  "private": true,
+  "author": {
+    "email": "frek1546@gmail.com",
+    "name": "Pratik Kataria",
+    "url": "https://pratikkataria.com"
+  },
+  "scripts": {
+    "dev": "next dev",
+    "build": "cross-env NODE_ENV=production next build",
+    "start": "next start",
+    "export": "next export",
+    "test": "jest --watch",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
+  },
+  "dependencies": {
+    "next": "11.0.1",
+    "react": "17.0.1",
+    "react-dom": "17.0.1",
+    "styled-components": "^5.3.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.14.6",
+    "@babel/preset-env": "^7.14.7",
+    "@babel/preset-react": "^7.14.5",
+    "@emotion/react": "^11.4.0",
+    "@next/plugin-storybook": "^11.0.1",
+    "@storybook/addon-actions": "^6.3.0",
+    "@storybook/addon-docs": "^6.3.0",
+    "@storybook/addon-essentials": "^6.3.0",
+    "@storybook/addon-links": "^6.3.0",
+    "@storybook/addon-postcss": "^2.0.0",
+    "@storybook/addon-viewport": "^6.3.0",
+    "@storybook/addons": "^6.3.0",
+    "@storybook/node-logger": "^6.3.0",
+    "@storybook/react": "^6.3.0",
+    "@storybook/theming": "^6.3.0",
+    "@svgr/webpack": "^5.5.0",
+    "@testing-library/dom": "^8.0.0",
+    "@testing-library/jest-dom": "^5.14.1",
+    "@testing-library/react": "^12.0.0",
+    "@testing-library/user-event": "^13.1.9",
+    "@types/jest": "^26.0.23",
+    "@types/node": "^15.12.4",
+    "@types/react": "^17.0.11",
+    "@types/react-dom": "^17.0.8",
+    "@types/styled-components": "^5.1.10",
+    "autoprefixer": "^10.2.6",
+    "babel-core": "7.0.0-bridge.0",
+    "babel-jest": "^27.0.5",
+    "babel-loader": "^8.2.2",
+    "babel-plugin-macros": "^3.1.0",
+    "babel-plugin-styled-components": "^1.12.0",
+    "chokidar": "^3.5.2",
+    "chokidar-cli": "^2.1.0",
+    "cross-env": "^7.0.3",
+    "ignore-loader": "^0.1.2",
+    "jest": "^27.0.5",
+    "npm-run-all": "^4.1.5",
+    "postcss": "^8.3.5",
+    "postcss-cli": "^8.3.1",
+    "postcss-loader": "^6.1.0",
+    "react-test-renderer": "^17.0.2",
+    "sharp": "^0.28.3",
+    "storybook": "^6.3.0",
+    "storybook-addon-next-router": "^2.0.4",
+    "tailwindcss": "^2.2.4",
+    "twin.macro": "^2.5.0",
+    "typescript": "^4.3.4"
+  },
+  "resolutions": {
+    "react": "17.0.1"
+  },
+  "browserslist": [
+    ">0.3%",
+    "not ie 11",
+    "not dead",
+    "not op_mini all"
+  ],
+  "jest": {
+    "testPathIgnorePatterns": [
+      "./.next/",
+      "./node_modules/",
+      "./.storybook/"
+    ],
+    "transform": {
+      "^.+\\.(js|jsx|ts|tsx)$": "<rootDir>/node_modules/babel-jest"
+    },
+    "moduleNameMapper": {
+      "\\.svg": "<rootDir>/__mocks__/svgrMock.js"
+    }
+  },
+  "browser": {
+    "fs": false
+  }
+}
